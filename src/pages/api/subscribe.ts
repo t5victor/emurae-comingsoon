@@ -19,8 +19,8 @@ export async function POST({ request }: APIContext) {
 		await resend.emails.send({
 			from: "onboarding@resend.dev",
 			to: "nevagroupclientes@gmail.com",
-			subject: "Nuevo registro en la landing",
-			html: `<p>Se ha registrado un nuevo correo:</p><p><strong>${email}</strong></p>`,
+			subject: "EMURAE: Nuevo interesado.",
+			html: `<p>EMURAE Se ha registrado un nuevo correo:</p><p><strong>${email}</strong></p>`,
 		});
 
 		return new Response(JSON.stringify({ ok: true }), {
